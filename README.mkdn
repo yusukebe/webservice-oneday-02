@@ -4,6 +4,48 @@
 
 *by Yusuke Wada and Osamu Ise.*
 
+---
 
+### For INTERNAL
 
+#### git から持ってくる
+
+    $ git clone git@github.com:yusukebe/webservice-oneday-02.git
+    $ cd webservice-oneday-02
+
+基本**gh-pages**ブランチでやります
+
+    $ git checkout -b gh-pages origin/gh-pages
+
+#### ビューアーをインストールする
+
+**Carton**を使っているのでそれをcpanmでインストール
+
+    $ cpanm Carton
+
+その後
+
+    $ carton install --deployment
+
+してください。完了したら立ち上げましょう
+
+    $ carton exec plackup -p 5000 realtime.psgi
+
+#### レポジトリを同期する的な操作＝pull
+
+    $ git pull origin gh-pages
+
+#### テキストを編集する
+
+お好きなエディタを使って text.mkdn を編集してください
+
+    $ emacs text.mkdn
+
+以下ヘッダにまつわるルール
+
+    # : 一番トップのタイトル。基本編集はしない
+    ## : ドカーンとテキストだけ出したい時に使う
+    ### : その後リストなどが続く時にそのタイトルを書く
+
+---
 

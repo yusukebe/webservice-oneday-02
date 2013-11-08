@@ -1,0 +1,80 @@
+#content {
+  width:80%;
+  margin:10% auto;
+  font-size:x-large;
+  font-weight:bold;
+}
+h1, h2, h3, h4{
+  text-align:center;
+  margin:0 0 1em 0;
+}
+h1 {
+  font-size:240%;
+  margin:2em 0 1em;
+}
+h2 {
+  margin: 2em 0;
+  padding:2em 0;
+  border: 1px solid #ccc;
+  background-color:#222;
+  color:#fff;
+}
+h3 {
+  font-size:200%;
+  border-bottom:1px solid #ccc;
+  padding:1em 0 0 0;
+}
+img {
+  max-width:70%;
+  margin:0 15%;
+  padding:2px;
+  border:1px solid #999;
+  max-height:400px;
+}
+p {
+  text-align:center;
+}
+ul, ol, p {
+  color:#333;
+  font-size:xx-large;
+}
+
+ul, ol {
+  margin-left:1.5em;
+}
+ul ul, ol ul, ul ol{
+  margin-left:0;
+}
+
+ul ul li, ol ul li {
+  font-size:xx-large;
+  font-size:90%;
+  color:#666;
+}
+
+blockquote {
+  margin:100px 0;
+  font-style:italic;
+  font-family: Georgia, 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho ProN', 'MS P 明朝', 'MS PMincho', serif;
+  padding:20px;
+  border:1px dotted #333;
+  line-height:2em;
+}
+
+
+a:link, a:visited {
+  color:#1122CC;
+}
+
+pre {
+  margin:5%;
+  padding:5%;
+  border:1px dashed #333;
+  background-color: #eee;
+  font-size:x-large;
+  overflow:auto;
+}
+
+pre.prettyprint { 
+  padding:1em;
+}

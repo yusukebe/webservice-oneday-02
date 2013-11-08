@@ -1,0 +1,18 @@
+#content {
+  width:98%;
+  margin:1% auto;
+  font-size:middle;
+}
+
+img {
+  max-height:300px;
+}
+
+pre {
+  font-size:middle;
+}
+
+ul, ol, p, ul ul li, ol ul li {
+  color:#333;
+  font-size:middle;
+}

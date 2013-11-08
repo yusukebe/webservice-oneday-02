@@ -1,1 +1,9 @@
-See **gh-pages** branch.
+## 1日でわかるWebサービス制作実践講座
+
+> MarkeZine Academy (マーケジンアカデミー) のセミナー資料です
+
+*by Yusuke Wada and Osamu Ise.*
+
+
+
+

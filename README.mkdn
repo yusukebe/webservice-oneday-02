@@ -17,19 +17,17 @@
 
     $ git checkout -b gh-pages origin/gh-pages
 
-#### ビューアーをインストールする
+#### PADをインストールする
 
-**Carton**を使っているのでそれをcpanmでインストール
-
-    $ cpanm Carton
+    $ cpanm PAD
 
 その後
 
-    $ carton install --deployment
+    $ pad Static --port 5000
 
-してください。完了したら立ち上げましょう
+で立ち上げましょう。以下のURLで閲覧可能です
 
-    $ carton exec plackup -p 5000 realtime.psgi
+    http://localhost:5000/index.html
 
 #### レポジトリを同期する的な操作＝pull
 
@@ -41,11 +39,11 @@
 
     $ emacs text.mkdn
 
-以下ヘッダにまつわるルール
+ページ区切りには
 
-    # : 一番トップのタイトル。基本編集はしない
-    ## : ドカーンとテキストだけ出したい時に使う
-    ### : その後リストなどが続く時にそのタイトルを書く
+    ---
+
+を使ってください
 
 #### テキストを更新したら...
 

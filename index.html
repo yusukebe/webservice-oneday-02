@@ -1,7 +1,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>This is Title</title>
+  <title>1日でわかるWebサービス制作実践講座</title>
   <link href="js/pretty/prettify.css" type="text/css" rel="stylesheet" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
@@ -9,13 +9,213 @@
 <body>
 <div id="content">
 
-<h1>This is Title</h1>
+<h1>1日でわかるWebサービス制作実践講座</h1>
 
-<p>blah, blah,</p>
+<ul>
+<li>マーケジン・アカデミー</li>
+<li>2013年11月19日(火)</li>
+<li>by Yusuke Wada and Osamu Ise</li>
+</ul>
 
-<h2>ほげほげほげ</h2>
+<h2>...;</h2>
 
-<h3>ですよね</h3>
+<h2>Web技術について</h2>
+
+<h3>技術にまつわる注意</h3>
+
+<ul>
+<li><strong>生半可</strong>は危険</li>
+<li><strong>言葉</strong>に踊らされない</li>
+<li>技術を<strong>強要</strong>しない</li>
+</ul>
+
+<blockquote>
+  <p>「そこHTML5でつくって」</p>
+  
+  <p>「？？（ HTML5と言われても... その定義は広いし... ）」</p>
+</blockquote>
+
+<h3>興味を持つことが大事</h3>
+
+<ul>
+<li>エンジニアとしては嬉しい</li>
+<li>エンジニアは教えるのが好き</li>
+<li>技術からの発想があるかも</li>
+<li>ちょっとした事が出来るかも</li>
+<li>現にこの資料は...</li>
+</ul>
+
+<h2>改めてWeb技術の基礎</h2>
+
+<blockquote>
+  <p>あたりまえに見ているWebページの裏側を知ろう</p>
+</blockquote>
+
+<p>＊<a href="http://markezine.jp/article/corner/466">基本Markezineの連載</a>を元にしてますがより噛みくだいて</p>
+
+<h3>サーバー・クライアントモデル</h3>
+
+<ul>
+<li>サーバー
+<ul>
+<li>よく聞きますよね？</li>
+<li>例えば、Webページを<strong>配信</strong>する</li>
+</ul></li>
+<li>クライアント
+<ul>
+<li>Internet Explorer, Chrome, Firefox...</li>
+<li>いわゆるブラウザもその一種</li>
+<li>サーバーに対して<strong>リクエスト</strong>をして<strong>レスポンス</strong>を受け取る</li>
+</ul></li>
+</ul>
+
+<h3>リクエストとレスポンス</h3>
+
+<p><img src="images/server_client.gif" alt="サーバー・クライアント" /></p>
+
+<blockquote>
+  <p>リクエスト「このWebページを見たい！」</p>
+  
+  <p>レスポンス「Webページはこれだよ！」</p>
+</blockquote>
+
+<h3>Webにおける約束事</h3>
+
+<ul>
+<li>サーバー・クライアントモデルを成り立たせるために</li>
+<li>両者間のやりとりについて約束事がある</li>
+<li><strong>URL</strong>、<strong>HTTP</strong>、<strong>HTML</strong></li>
+<li>世界中どこでもWebページが見れるために...</li>
+</ul>
+
+<h2>URL = "Uniform Resource Locator"</h2>
+
+<pre><code>http://example.com/about.html
+</code></pre>
+
+<ul>
+<li>どこのWebページが見たいか？を示すアドレス</li>
+<li>http - HTTPというプロトコルを使うことを宣言</li>
+<li>example.com - サーバーのホスト名</li>
+<li>/about.html - ホスト配下の具体的な場所</li>
+</ul>
+
+<h2>HTTP = Hypertext Transfer Protocol</h2>
+
+<ul>
+<li>サーバーとクライアント間の通信のやりとりを規定</li>
+<li>RFC 2616という仕様にまとめられている</li>
+<li>GET - URLで指定されたリソースを取り出す</li>
+<li>POST - URLに対してクライアントがサーバーへデータを送信する</li>
+</ul>
+
+<blockquote>
+  <p>まずは「そういう決まりごとがあるんだな」程度の理解から！</p>
+</blockquote>
+
+<h2>HTML = HyperText Markup Language</h2>
+
+<pre><code>&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Welcome Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    Hello, I am &lt;a href="http://yusuke.be/"&gt;yusukebe&lt;/a&gt;!
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<ul>
+<li>皆さんご存知のコレです</li>
+<li>他のページへのハイパーリンク</li>
+<li>画像等の埋め込み</li>
+<li>プレーンテキスト形式にタグを書く</li>
+<li>要素、属性、値、内容</li>
+<li>ブラウザはHTMLテキストを解釈し描画している</li>
+</ul>
+
+<h2>Webサイトの性質</h2>
+
+<p>「あなたのWebサイトは静的サイト？動的サイト？」</p>
+
+<ul>
+<li>動的サイト
+<ul>
+<li>リクエストごとに、サーバーサイドの裏側で動的にページが生成される</li>
+</ul></li>
+<li>静的サイト
+<ul>
+<li>HTMLや画像等を都度都度は変更せず、そのまま配信される</li>
+</ul></li>
+</ul>
+
+<h3>問題です</h3>
+
+<blockquote>
+  <p>WordPress、MovableTypeで作られたサイト。</p>
+  
+  <p>それぞれ動的？静的？どちら？</p>
+</blockquote>
+
+<h3>動的サイトと静的サイト</h3>
+
+<p><img src="images/static_dynamic.gif" alt="動的サイトと静的サイト" /></p>
+
+<h2>静的サイト</h2>
+
+<h3>構成する要素</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript - ページに動的な動きを加える</li>
+<li>画像、Flash、Webフォント...</li>
+</ul>
+
+<h2>CSS - HTMLを装飾する</h2>
+
+<h3>CSSセレクタ</h3>
+
+<p>ヘッダー「h1」タグの「class」に属性「header」という値を記述</p>
+
+<pre><code>&lt;h1 class="header"&gt;見出し&lt;/h1&gt;
+</code></pre>
+
+<p>h1タグの内容の色を変更したい！とすると...</p>
+
+<pre><code>h1.header { color:red; }
+</code></pre>
+
+<p>どこを装飾するかを指示する「h1.header」が<strong>CSSセレクタ</strong>と呼ばれている</p>
+
+<p>どのように装飾するかは<strong>CSSプロパティ</strong>で指定</p>
+
+<h2>JavaScript - HTMLを変化させる</h2>
+
+<h3>クライアントサイドでの動的な仕掛けをつくれる</h3>
+
+<ul>
+<li>Webページの特定の部分を動かす</li>
+<li>フェードイン・フェードアウトなどもできる</li>
+<li>ボタンを押すと一番上までスクロールして戻る</li>
+<li>クライアントサイドだけでフォームの入力値検証</li>
+<li>スライドショーなど特殊な見た目の実装</li>
+</ul>
+
+<h2 id="js-demo"
+  style="cursor:pointer;"
+  onclick="$(this).fadeOut(1000, function(){ $(this).fadeIn() });">
+  ここをクリックしてデモ
+</h2>
+
+<h3>静的サイトとしてWebページ</h3>
+
+<ul>
+<li>最低限はHTML</li>
+<li>見た目を変えたければCSS</li>
+<li>動きを与えたければJavaScript</li>
+<li>サーバーで配信をすればWebページとして機能</li>
+</ul>
 </div>
 <script type="text/javascript" src="js/pretty/prettify.js"></script>
 <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>

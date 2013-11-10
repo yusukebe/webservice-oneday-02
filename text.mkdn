@@ -32,3 +32,62 @@
 
 ### サーバー・クライアントモデル
 
+- サーバー
+  - よく聞きますよね？
+  - 例えば、Webページを**配信**する
+- クライアント
+  - Internet Explorer, Chrome, Firefox...
+  - いわゆるブラウザもその一種
+  - サーバーに対して**リクエスト**をして**レスポンス**を受け取る
+
+### リクエストとレスポンス
+
+![サーバー・クライアント](images/server_client.gif)
+
+> リクエスト「このWebページを見たい！」
+
+> レスポンス「Webページはこれだよ！」
+
+### Webにおける約束事
+
+- サーバー・クライアントモデルを成り立たせるために
+- 両者間のやりとりについて約束事がある
+- **URL**、**HTTP**、**HTML**
+- 世界中どこでもWebページが見れるために...
+
+## URL = "Uniform Resource Locator"
+
+    http://example.com/about.html
+
+- どこのWebページが見たいか？を示すアドレス
+- http - HTTPというプロトコルを使うことを宣言
+- example.com - サーバーのホスト名
+- /about.html - ホスト配下の具体的な場所
+
+## HTTP = Hypertext Transfer Protocol
+
+- サーバーとクライアント間の通信のやりとりを規定
+- RFC 2616という仕様にまとめられている
+- GET - URLで指定されたリソースを取り出す
+- POST - URLに対してクライアントがサーバーへデータを送信する
+
+> まずは「そういう決まりごとがあるんだな」程度の理解から！
+
+## HTML = HyperText Markup Language
+
+    <html>
+      <head>
+        <title>Welcome Page</title>
+      </head>
+      <body>
+        Hello, I am <a href="http://yusuke.be/">yusukebe</a>!
+      </body>
+    </html>
+
+- 皆さんご存知のコレです
+- 他のページへのハイパーリンク
+- 画像等の埋め込み
+- プレーンテキスト形式にタグを書く
+- 要素、属性、内容
+- ブラウザはHTMLテキストを解釈し描画している
+

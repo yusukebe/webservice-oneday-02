@@ -141,3 +141,9 @@ body {
   margin-bottom:1em;
   padding:1em;
 }
+
+.reveal pre {
+  font-size:0.8em;
+  margin-top:1.0em;
+  margin-bottom:1.0em;
+}

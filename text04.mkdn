@@ -17,7 +17,7 @@
 
 ### まず、チームでワクワクする目標を共有する
 
-![ビジョン](images/vision.jpg)
+![ビジョン](images/Vision.jpg)
 
 ---
 
